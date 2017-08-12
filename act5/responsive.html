@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="scripts/animate.css">
+  <meta charset="UTF-8" />
+
+<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    class="animated flash"
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    float: left;
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 50;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+div{
+  padding:10px;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+
+</head>
+<body>
+
+  <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menú del sitio</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="index.html">Inicio</a>
+      <a href="ExtensionesSWF.html">Extensiones SWF</a>
+      <a href="AMP.html">Páginas aceleradas para Móviles</a>
+    </div>
+  </div>
+  <br><br>
+  <div class="">
+    <p><h2>Responsive Web Design</h2></p>
+  </div>
+
+
+  <p style="text-align: justify">Un diseño responsivo en nuestra página web hace que esta se vea bien en todos los dispositivos, sin importar si se trata de equipos de cómputo, tables o teléfonos inteligentes.
+  Este tipo de diseño se basa en el uso de estilos CCS y HTML para dar formato al contenido del sitio. Se dice que un sitio es responsivo cuando el contido de dicho sitio se adapta al tamaño de la pantalla del dispositivo en el que se visualiza.
+  </p>
+
+
+  <div style="display:flex">
+    <div style="text-align:center; width:50%; height:50%">
+      <img src="imagenes/rwd_desktop.png" alt="Visualización del sitio en un equipo de cómputo" class="animated flash">
+      <p style="text-align: center">
+        <i>Figura 1: Visualización del sitio en un equipo de cómputo</i>
+      </p>
+    </div>
+
+    <div style="text-align:center; width:30%; height:30%">
+      <img src="imagenes/rwd_tablet.png" alt="Visualización del sitio en una tablet" class="animated swing">
+      <p style="text-align: center">
+        <i>Figura 2: Visualización del sitio en una tablet</i>
+      </p>
+    </div>
+
+    <div style="text-align:center; width:20%; height:20%">
+        <img src="imagenes/rwd_phone.png" alt="Visualización del sitio en un smartphone" class="animated jello">
+        <p style="text-align: center">
+          <i>Figura 3: Visualización del sitio en un smartphone</i>
+        </p>
+  </div>
+  </div>
+
+  <div class="">
+    <h2>Preguntas</h2>
+  </div>
+
+  <div>
+    <li><strong>¿Qué significa que un sitio Responsive Web Design?</strong></li>
+    <p style="text-align: justify">Se refiere a la capacidad de un sitio web a adaptarse al tamaño de pantalla para los diferentes dispositivos.
+      El objetivo primordial de este tipo de diseño, se centra en la correcta visualización de los contenidos.</p>
+  </div>
+
+  <div>
+    <li><strong>¿Qué implica en cuestión de programación el diseño responsivo?</strong></li>
+    <p style="text-align: justify">El diseño responsivo se trata solo de ajustar los contenidos al tamaño de la pantalla. Significa que solamente
+      exite una versión del sitio web, y por lo tanto este se adaptará al tamaño de pantalla del dispositivo que lo visualiza. </p>
+  </div>
+
+
+  <div>
+    <li><strong>¿Es correcto llamarle diseño responsivo o debería ser adaptativo?</strong></li>
+    <p style="text-align: justify">Diseño responsivo y diseño adaptativo son cosas completamente diferentes. Su principal diferencia radica en que
+      en el diseño responsivo solo existe una página y es esta la que se adapta al dispositivo que la visualiza. Cosa contraria en el diseño adaptativo,
+      en el cual se han diseñado diferentes versiones del mismo sitio <i>(sitios diferentes para tablets, escritorio y smartphones)</i> y el navegador
+      web es el encargado de solicitar la página correcta dependiendo del dispositivo. </p>
+  </div>
+
+  <div>
+    <li><strong>¿Cuál es la tendencia de los sitios ante este tipo de diseño?</strong></li>
+    <p style="text-align: justify"> Sin duda alguna el diseño de sitios responsivos y/o adaptativos seguirá en aumento, esto debido al incremento
+      de dispositivos móviles. Sin embargo aquellos sitios que no sigan líneas de diseño como lo es <i>flat design</i>,no resultarán visualmente
+      atractivas para los usuarios <i>(simplemente parecerán anticuadas)</i>. Otra funcionalidad muy demandada en los sitios web actuales, es sin duda
+      la navegación por medio de scrool. Un ejemplo claro de esta tendencia lo podemos ver en Facebook. En este ejemplo las actualizaciones de contenido
+      se generan conforme avanzamos en el sitio (parece que el scroll es infinito). Por último hay que destacar que una parte importante y de vital importancia
+      es el apartado referente al rendimiento. Se tiene que buscar un equilibrio entre tres aspectos: apariencia, experiencia de navegación (velocidad) y consumo de datos.</p>
+  </div>
+  </div>
+
+  <div>
+    <h2>Bibliografía</h2>
+  </div>
+
+  <div>
+    <li><a href="http://strategia20.com/que-es-un-sitio-web-responsivo-y-porque-es-importante/">¿Qué es un sitio web y por qué es importante?</a></li>
+    <li><a href="http://www.guypo.com/performance-implications-of-responsive-design-book-contribution/">Performance Implications of Responsive Design - Book Contribution</a></li>
+    <li><a href="http://www.redesymarketing.com/web-adaptativa-vs-responsive-web/">Web adaptativa vs Responsive Web</a></li>
+    <li><a href="https://devcode.la/blog/10-tendencias-del-diseno-web-actual/">10 tendencias del diseño web actual</a></li>
+  </div>
+
+
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+  </body>
+</html>

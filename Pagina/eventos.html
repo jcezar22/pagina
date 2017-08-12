@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Importamos la fuente Icon de Google-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Importamos materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/index.css"  media="screen,projection"/>
+
+      <!--Le hacemos saber al navegador que la página esta optimizada para móvil-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="UTF-8" />
+    </head>
+
+    <body>
+      <!--Se importa el jquery antes que el materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+
+      <!--Barra de navegacion -->
+      <nav>
+       <div class="nav-wrapper grey darken-4">
+         <a href="#!" class="brand-logo"><img id="logo" src="imagenes/logo.png" alt=""></a>
+         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+         <ul class="right hide-on-med-and-down">
+           <li><a href="index.html">Inicio</a></li>
+           <li><a href="retratos.html">Retratos</a></li>
+           <li><a href="maternidad.html">Maternidad</a></li>
+           <li><a href="bebes.html">Bebés</a></li>
+           <li><a href="familiares.html">Familiares</a></li>
+           <li><a class="yellow-text" href="eventos.html">Eventos Sociales</a></li>
+         </ul>
+
+         <!--Barra de navegacion en modo movil -->
+         <ul class="side-nav" id="mobile-demo">
+           <li><a href="index.html">Inicio</a></li>
+           <li><a href="retratos.html">Retratos</a></li>
+           <li><a href="maternidad.html">Maternidad</a></li>
+           <li><a href="bebes.html">Bebés</a></li>
+           <li><a href="familiares.html">Familiares</a></li>
+           <li><a href="eventos.html">Eventos Sociales</a></li>
+         </ul>
+       </div>
+       </nav>
+
+
+      <div class="content "> <!--contenedor para las tarjetas/fotografias -->
+        <div class="row">
+          <div class="col l4"> <!--Tarjeta 1 -->
+            <div class="card ">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="imagenes/eventos/ev1.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Quince Años<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal"> <!--Efecto de revelado del texto -->
+                <span class="card-title grey-text text-darken-4">Quince Años<i class="material-icons right">close</i></span>
+                <p>Preservamos los bellos momentos de ese día tan especial: ¡Tus quince años!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col l4"><!--Tarjeta 2 -->
+            <div class="card ">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="imagenes/eventos/ev2.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Cumpleaños<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal"> <!--Efecto de revelado del texto -->
+                <span class="card-title grey-text text-darken-4">Cumpleaños<i class="material-icons right">close</i></span>
+                <p>Captura en fotografía los felices momentos de tus pequeños. Asistimos a tus eventos de cumpleaños.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col l4"><!--Tarjeta 3 -->
+            <div class="card ">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="imagenes/eventos/ev3.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Fiestas y Graduaciones<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal"> <!--Efecto de revelado del texto -->
+                <span class="card-title grey-text text-darken-4">Fiestas y Graduaciones<i class="material-icons right">close</i></span>
+                <p>Nos aseguramos de fotografiar los mejores momentos de tu reunión. Preserva tus momentos de éxito para la posteridad.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!--Footer con los datos de contacto de la empresa -->
+        <div>
+          <footer class="page-footer grey darken-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col l6 s12">
+                    <h5 class="white-text">Nature Photo</h5>
+                    <p class="grey-text text-lighten-4">En Nature Photo Studio queremos saber de ti, pide una cotización
+                      por correo electrónico o ponte en contacto con nosotros.
+                    </p>
+                  </div>
+                  <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Contacto</h5>
+                    <ul>
+                      <li><a class="grey-text text-lighten-3" href="mailto:contacto@naturephoto.com?Subject=Cotizacion">Correo electrónico</a></li>
+                      <li class="grey-text text-lighten-3">Teléfono: (442) 296 1300 </li>
+                      <li class="grey-text text-lighten-3">Dirección: Ave. Tecnológico #100 </li>
+                      <li class="grey-text text-lighten-3">Santiago de Querétaro, Qro. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <div class="container">
+                Julio César Zamora Ramos
+                </div>
+              </div>
+            </footer>
+        </div>
+
+<script type="text/javascript" >
+$(document).ready(function(){
+      $('.carousel').carousel(); <!--inicalizacion del efecto de las tarjetas 3 -->
+    });
+
+</script>
+    </body>
+  </html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Importamos la fuente Icon de Google-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Importamos materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/index.css"  media="screen,projection"/>
+
+      <!--Le hacemos saber al navegador que la página esta optimizada para móvil-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="UTF-8" />
+    </head>
+
+    <body>
+      <!--Se importa el jquery antes que el materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+      <!--Barra de navegacion -->
+      <nav>
+       <div class="nav-wrapper grey darken-4">
+         <a href="#!" class="brand-logo"><img id="logo" src="imagenes/logo.png" alt=""></a>
+         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+         <ul class="right hide-on-med-and-down">
+           <li><a href="index.html">Inicio</a></li>
+           <li><a href="retratos.html">Retratos</a></li>
+           <li><a class="yellow-text" href="maternidad.html">Maternidad</a></li>
+           <li><a href="bebes.html">Bebés</a></li>
+           <li><a href="familiares.html">Familiares</a></li>
+           <li><a href="eventos.html">Eventos Sociales</a></li>
+         </ul>
+
+         <!--Barra de navegacion en modo movil-->
+         <ul class="side-nav" id="mobile-demo">
+           <li><a href="index.html">Inicio</a></li>
+           <li><a href="retratos.html">Retratos</a></li>
+           <li><a href="maternidad.html">Maternidad</a></li>
+           <li><a href="bebes.html">Bebés</a></li>
+           <li><a href="familiares.html">Familiares</a></li>
+           <li><a href="eventos.html">Eventos Sociales</a></li>
+         </ul>
+       </div>
+       </nav>
+
+      <!--Pop-up de la promición 1 -->
+     <div id="modal1" class="modal">
+       <div class="modal-content">
+         <h4>Promoción 1</h4>
+         <p>En la impresión de 10 fotografías, llévate 2 gratis.</p>
+       </div>
+
+       <div class="modal-footer"> <!--boton para cerrar el pop-up -->
+         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+       </div>
+     </div>
+
+      <!--Pop-up de la promición 2 -->
+     <div id="modal2" class="modal">
+       <div class="modal-content">
+         <h4>Promoción 2</h4>
+         <p>En la impresión de 50 fotografías, llévate 10 gratis.</p>
+       </div>
+
+       <div class="modal-footer"> <!--boton para cerrar el pop-up -->
+         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+       </div>
+     </div>
+
+      <!--Pop-up de la promición 3 -->
+     <div id="modal3" class="modal">
+       <div class="modal-content">
+         <h4>Promoción 3</h4>
+         <p>En la impresión de 100 fotografías, llévate 20 gratis.</p>
+       </div>
+
+       <div class="modal-footer"> <!--boton para cerrar el pop-up -->
+         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+       </div>
+     </div>
+
+      <!--Slider de tamaño mayor para mostrar las fotografias -->
+      <div class="content grey darken-4">
+        <div class="row">
+          <div class="col l12">
+            <div class="carousel carousel-slider">
+              <a class="carousel-item modal-trigger" data-target="modal1" href="#modal1"><img src="imagenes/maternidad/mat1.jpg"></a>
+              <a class="carousel-item modal-trigger" data-target="modal2" href="#modal2"><img src="imagenes/maternidad/mat3.jpg"></a>
+              <a class="carousel-item modal-trigger" data-target="modal3" href="#modal3"><img src="imagenes/maternidad/mat4.jpg"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!--Footer con los datos de contacto de la empresa -->
+        <div>
+          <footer class="page-footer grey darken-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col l6 s12">
+                    <h5 class="white-text">Nature Photo</h5>
+                    <p class="grey-text text-lighten-4">En Nature Photo Studio queremos saber de ti, pide una cotización
+                      por correo electrónico o ponte en contacto con nosotros.
+                    </p>
+                  </div>
+                  <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Contacto</h5>
+                    <ul>
+                      <li><a class="grey-text text-lighten-3" href="mailto:contacto@naturephoto.com?Subject=Cotizacion">Correo electrónico</a></li>
+                      <li class="grey-text text-lighten-3">Teléfono: (442) 296 1300 </li>
+                      <li class="grey-text text-lighten-3">Dirección: Ave. Tecnológico #100 </li>
+                      <li class="grey-text text-lighten-3">Santiago de Querétaro, Qro. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <div class="container">
+                Julio César Zamora Ramos
+                </div>
+              </div>
+            </footer>
+        </div>
+
+    <script type="text/javascript" >
+      $(document).ready(function(){
+      $('.carousel.carousel-slider').carousel({fullWidth: true});
+        $('.modal').modal(); <!--inicializacion de los pop-ups -->
+      });
+  </script>
+    </body>
+  </html>

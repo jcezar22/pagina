@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="scripts/animate.css">
+    <meta charset="UTF-8" />
+<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    float: left;
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    font-size: 15px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 50;
+    z-index: 1;
+    font-size: 14px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+
+</head>
+<body>
+
+  <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menú del sitio</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="ExtensionesSWF.html">Extensiones SWF</a>
+      <a href="responsive.html">Responsive Web Desing</a>
+      <a href="AMP.html">Páginas aceleradas para Móviles</a>
+    </div>
+  </div>
+  <br><br>
+
+  <div>
+    <p><h2>Publicación en Internet</h2></p>
+  </div>
+  <div class=""style="display:flex">
+    <div style="text-align:left; width:15%; height:15%">
+        <img src="imagenes/sabes.jpg" alt="Logo sabes" height="150" width="120" class="animated wobble">
+    </div>
+    <div class="">
+      <p style="text-align: justify">Este sitio web corresponde a la actividad 5 de la materia Publicación en Internet. En esta actividad se tratarán temas
+        respecto a las tendencias actuales de diseño web, tales como diseño responsivo y diseño adaptativo. Se hace uso también de una libreria externa para
+        animar las imagenes presentes en este sitio. Dicha librería puede ser descargada en el siguiente <a href="https://github.com/daneden/animate.css">enlace.</a></p>
+    </div>
+  </div>
+
+
+
+
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+  </body>
+</html>

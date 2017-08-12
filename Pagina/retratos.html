@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Importamos la fuente Icon de Google-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Importamos materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/index.css"  media="screen,projection"/>
+
+      <!--Le hacemos saber al navegador que la página esta optimizada para móvil-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="UTF-8" />
+    </head>
+
+    <body>
+      <!--Se importa el jquery antes que el materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+
+      <!--Barra de navegacion -->
+      <nav>
+       <div class="nav-wrapper grey darken-4">
+         <a href="#!" class="brand-logo"><img id="logo" src="imagenes/logo.png" alt=""></a>
+         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+         <ul class="right hide-on-med-and-down">
+           <li><a href="index.html">Inicio</a></li>
+           <li><a class="yellow-text" href="retratos.html">Retratos</a></li>
+           <li><a href="maternidad.html">Maternidad</a></li>
+           <li><a href="bebes.html">Bebés</a></li>
+           <li><a href="familiares.html">Familiares</a></li>
+           <li><a href="eventos.html">Eventos Sociales</a></li>
+         </ul>
+
+         <!--Barra de navegacionen modo movil -->
+         <ul class="side-nav" id="mobile-demo">
+           <li><a href="index.html">Inicio</a></li>
+           <li><a href="retratos.html">Retratos</a></li>
+           <li><a href="maternidad.html">Maternidad</a></li>
+           <li><a href="bebes.html">Bebés</a></li>
+           <li><a href="familiares.html">Familiares</a></li>
+           <li><a href="eventos.html">Eventos Sociales</a></li>
+         </ul>
+       </div>
+       </nav>
+
+
+       <div class="row"> <!--contenedor para las fotografias -->
+         <div class="col s4"> <!--tamaño del contenedor -->
+           <div class="center promo promo-example">
+             <img src="imagenes/retratos/st1.jpg" width="50%" height="40%" alt="modelo" style="margin-top:25px"> <!--imagen con margen -->
+             <p class="promo-caption"><strong>Fotofrafía Profesional para parejas</strong></p>
+             <p class="light center">Ven con tu pareja y haz una sesión de fotos con nosotros. ¡No te rrepentirás.!</p>
+           </div>
+         </div>
+
+         <div class="col s4">
+           <div class="center promo promo-example"> <!--tamaño del contenedor -->
+             <img src="imagenes/retratos/st4.jpg" width="50%" height="40%" alt="modelo" style="margin-top:25px"> <!--imagen con margen -->
+             <p class="promo-caption"><strong>Servicio profesional para modelos</strong></p>
+             <p class="light center">¿Eres modelo y buscas un servicio de fotografía profesional? ¡Somos tu mejor opción!</p>
+           </div>
+         </div>
+
+         <div class="col s4">
+           <div class="center promo promo-example"> <!--tamaño del contenedor -->
+             <img src="imagenes/retratos/st6.jpg" width="50%" height="40%" alt="modelo" style="margin-top:25px"> <!--imagen con margen -->
+             <p class="promo-caption"><strong>Te ayudamos con tu marca personal</strong></p>
+             <p class="light center">¡Muéstrate profesional! Servicio de fotografía para tu empresa.</p>
+           </div>
+         </div>
+       </div>
+
+        <!--Footer con los datos de contacto de la empresa -->
+        <div>
+          <footer class="page-footer grey darken-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col l6 s12">
+                    <h5 class="white-text">Nature Photo</h5>
+                    <p class="grey-text text-lighten-4">En Nature Photo Studio queremos saber de ti, pide una cotización
+                      por correo electrónico o ponte en contacto con nosotros.
+                    </p>
+                  </div>
+                  <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Contacto</h5>
+                    <ul>
+                      <li><a class="grey-text text-lighten-3" href="mailto:contacto@naturephoto.com?Subject=Cotizacion">Correo electrónico</a></li>
+                      <li class="grey-text text-lighten-3">Teléfono: (442) 296 1300 </li>
+                      <li class="grey-text text-lighten-3">Dirección: Ave. Tecnológico #100 </li>
+                      <li class="grey-text text-lighten-3">Santiago de Querétaro, Qro. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <div class="container">
+                Julio César Zamora Ramos
+                </div>
+              </div>
+            </footer>
+        </div>
+    </body>
+  </html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Importamos la fuente Icon de Google-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Importamos materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/index.css"  media="screen,projection"/>
+
+      <!--Le hacemos saber al navegador que la página esta optimizada para móvil-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="UTF-8" />
+    </head>
+
+    <body>
+      <!--Se importa el jquery antes que el materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+
+      <!--Barra de navegacion -->
+      <nav>
+       <div class="nav-wrapper grey darken-4">
+         <a href="#!" class="brand-logo"><img id="logo" src="imagenes/logo.png" alt=""></a>
+         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+         <ul class="right hide-on-med-and-down">
+           <li><a class="yellow-text" href="index.html">Inicio</a></li>
+           <li><a href="retratos.html">Retratos</a></li>
+           <li><a href="maternidad.html">Maternidad</a></li>
+           <li><a href="bebes.html">Bebés</a></li>
+           <li><a href="familiares.html">Familiares</a></li>
+           <li><a href="eventos.html">Eventos Sociales</a></li>
+         </ul>
+           <!--Barra de navegacion en modo móvil-->
+         <ul class="side-nav" id="mobile-demo">
+           <li><a class="yellow-text" href="index.html">Inicio</a></li>
+           <li><a href="retratos.html">Retratos</a></li>
+           <li><a href="maternidad.html">Maternidad</a></li>
+           <li><a href="bebes.html">Bebés</a></li>
+           <li><a href="familiares.html">Familiares</a></li>
+           <li><a href="eventos.html">Eventos Sociales</a></li>
+         </ul>
+       </div>
+       </nav>
+
+        <!--Slider de fotografias -->
+        <div class="slider grey darken-4">
+          <ul class="slides">
+            <li>
+              <img src="imagenes/banner5.png">
+              <div class="caption center-align">
+                <h3>Fotos de bebés y niños</h3>
+                <h5 class="light grey-text text-lighten-3">Somos un estudio fotográfico especializado en fotos infantiles.</h5>
+              </div>
+            </li>
+            <li>
+            <img src="imagenes/banner1.png">
+            <div class="caption left-align">
+              <h3>Álbum de niños</h3>
+              <h5 class="light grey-text text-lighten-3">Guarda momentos para toda la vida.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="imagenes/banner3.png">
+            <div class="caption right-align">
+              <h3>Para toda ocasión</h3>
+              <h5 class="light grey-text text-lighten-3">Capta esos momentos especiales</h5>
+            </div>
+          </li>
+          <li>
+            <img src="imagenes/banner4.png">
+            <div class="caption center-align">
+              <h3>Fotografía profesional</h3>
+              <h5 class="light grey-text text-lighten-3">Te ayudamos con tu marca personal.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+        <!--Footer con los datos de contacto de la empresa -->
+        <div>
+          <footer class="page-footer grey darken-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col l6 s12">
+                    <h5 class="white-text">Nature Photo</h5>
+                    <p class="grey-text text-lighten-4">En Nature Photo Studio queremos saber de ti, pide una cotización
+                      por correo electrónico o ponte en contacto con nosotros.
+                    </p>
+                  </div>
+                  <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Contacto</h5>
+                    <ul>
+                      <li><a class="grey-text text-lighten-3" href="mailto:contacto@naturephoto.com?Subject=Cotizacion">Correo electrónico</a></li>
+                      <li class="grey-text text-lighten-3">Teléfono: (442) 296 1300 </li>
+                      <li class="grey-text text-lighten-3">Dirección: Ave. Tecnológico #100 </li>
+                      <li class="grey-text text-lighten-3">Santiago de Querétaro, Qro. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <div class="container">
+                Julio César Zamora Ramos
+                </div>
+              </div>
+            </footer>
+        </div>
+    </body>
+  </html>

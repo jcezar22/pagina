@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <link rel="stylesheet" href="scripts/animate.css">
+      <meta charset="UTF-8" />
+<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    float: left;
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 50;
+    z-index: 1;
+    font-size: 14px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+
+</head>
+<body>
+
+  <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menú del sitio</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="index.html">Inicio</a>
+      <a href="ExtensionesSWF.html">Extensiones SWF</a>
+      <a href="responsive.html">Responsive Web Desing</a>
+    </div>
+  </div>
+
+  <br><br>
+  <div class="">
+    <p><h2>AMP: Páginas aceleradas para móviles</h2></p>
+  </div>
+
+
+  <p style="text-align: justify">Se trata de un proyecto nacido y alojado en Internet dedicado a mejorar, optimizar y acelerar la carga
+    y funcionamiento de las páginas que sean visualizadas en dispositivos móviles. Dicho proyecto es de código abierto, por lo que cualquier
+    persona que desee hacer uso de él, puede usar las librerías disponibles sin necesidad de contar con licencias o permisos de uso. Este proyecto
+    cuenta con el apoyo de grandes empresas de Internet, tales como Facebook, Google, Twitter. Actualmente su uso está mayormente enfocado en
+    sitios web de noticias.
+  </p>
+
+
+  <div style="display:flex">
+    <div style="text-align:center; width:100%; height:100%">
+      <img src="imagenes/amp.jpg" alt="AMP: Páginas aceleradas para móviles" height="300" width="450" class="animated zoomInDown">
+      <p style="text-align: center">
+        <i>Figura 1: AMP: Páginas aceleradas para móviles</i>
+      </p>
+    </div>
+  </div>
+
+  <div class="">
+    <h2>Preguntas</h2>
+  </div>
+
+  <div>
+    <li><strong>¿Para qué tipo de publicaciones están principalmente dirigidas las AMP?</strong></li>
+    <p style="text-align: justify">Se usa principalmente en sitios de noticias, aunque puede usarse en cualquier tipo de sitio web.</p>
+  </div>
+
+  <div>
+    <li><strong>¿Cuál es el icono con la que diferencia Google a las AMP?</strong></li>
+    <p style="text-align: justify">El icono utilizado es un circulo con un rayo en su interior <img src="imagenes/amp_icon.png" alt="icono google AMP" height="50" width="100" class="animated fadeIn">  </p>
+  </div>
+  <br>
+
+  <div>
+    <li><strong>Indica cuáles son las ventajas y desventajas que tu identificas de las AMP con las tradicionales</strong></li>
+    <p style="text-align: left"><strong>Ventajas:</strong> </p>
+    <p style="text-align: left">
+      <ol>
+        <li value="1">Las páginas se cargan de manera más rapida y consumen menos datos</li>
+        <li>Permite al buscador calcular y mostrar la página web móvil con una sola petición HTTP.</li>
+        <li>De manera nativa las páginas AMP soportan diversas redes de publicidad. </li>
+        <li>Permite a los aununciantes conocer el flujo de usuarios que visitan la página (Estadísticas). </li>
+      </ol>
+    </p>
+
+    <p style="text-align: left"><strong>Desventajas:</strong> </p>
+  </div>
+
+  <p style="text-align: left">
+    <ol>
+      <li value="1">No se puede hacer uso de scripts, algo muy común en los sitios web normales.</li>
+      <li>No se pueden cargar hojas de estilo externas, por lo que el estilo a aplicar debe estar revuelto con el contenido de la página.</li>
+      <li>No se puede hacer uso de los <i>"botones sociales"</i>, por lo que se limita la interacción con redes sociales. </li>
+      <li>El código de la página se hace pesado de interpretar y el mantenimiento se dificulta para personas no expertas. </li>
+    </ol>
+  </p>
+
+  <div>
+    <h2>Bibliografía</h2>
+  </div>
+
+  <div>
+    <li><a href="https://www.ampproject.org/">Sitio oficial del proyecto AMP</a></li>
+    <li><a href="http://www.guypo.com/performance-implications-of-responsive-design-book-contribution/">Performance Implications of Responsive Design - Book Contribution</a></li>
+    <li><a href="https://www.digivate.com/blog/seo/benefits-of-accelerated-mobile-pages/">Benefits of accelerated mobile pages</a></li>
+    <li><a href="https://marketing4ecommerce.mx/el-verdadero-beneficio-de-amp-paginas-aceleradas-moviles/">El verdadero beneficio de las paginas aceleradas móviles</a></li>
+  </div>
+
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+  </body>
+</html>

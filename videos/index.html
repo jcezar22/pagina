@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <title>Document</title>
+</head>
+<body>
+
+  <div><label for=""><b>Video Original</b></label><video id="video1" width="300" height="200" controls><source src="Untitled-4.webm" type="video/webm"></video></div>
+
+  <div  id="divgrande">
+
+    <div><label for=""><b>Efecto Ovalo</b></label> <video onmouseover="auto_play()" id="video2" width="300" height="200"><source src="Untitled-4.webm" type="video/webm"></video></div>
+
+    <div><label for=""><b>Filtro</b></label><video onclick="filtro()" id="video3" width="300" height="200" controls><source src="Untitled-4.webm" type="video/webm"></video></div>
+  </div>
+
+  <div><video id="video4" width="300" height="200" controls><source src="Untitled-4.webm" type="video/webm"></video>
+  <div> <canvas id="canvas1" width="2000"></canvas></div>
+  </div>
+
+  <div><label for=""><b>Personalizado</b></label> <video onmouseover="video_personalizado()" id="video5" width="300" height="200" controls><source src="Untitled-4.webm" type="video/webm"></video></div>
+
+
+<style>
+#divgrande{
+  display:flex;
+}
+
+div{
+  padding:10px;
+}
+label{
+  display:block;
+}
+video{
+  border:1px solid black;
+
+}
+.ovalo{
+border-radius: 50px;
+}
+
+.filtro{
+  filter:blur(5px);
+}
+</style>
+
+
+<script type="text/javascript">
+  var video1 = document.getElementById("video1")
+  var video2 = document.getElementById("video2")
+  var video3 = document.getElementById("video3")
+  var video4 = document.getElementById("video4")
+  var video5 = document.getElementById("video5")
+  captura();
+
+
+function auto_play(){
+video2.play();
+ovalo();
+}
+
+function video_personalizado(){
+video5.play();
+video5.classList.add("ovalo");
+video5.classList.add("filtro");
+video5.classList.add("filtro");
+}
+
+function filtro(){
+video3.play();
+video3.classList.add("filtro");
+}
+
+function ovalo(){
+video2.classList.add("ovalo");
+}
+
+
+function captura(){
+  var canvas =document.getElementById("canvas1");
+  var ctx = canvas.getContext("2d");
+  var incremento = 0;
+  video4.play();
+  var timer=  setInterval (function(){
+    console.info("capture");
+    ctx.drawImage (video4,incremento,0,120,80);
+    incremento +=122
+    if (incremento == 854){
+      clearInterval(timer);
+    }
+  },2000);
+}
+
+</script>
+</body>
+</html>

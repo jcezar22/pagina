@@ -1,0 +1,20 @@
+nav{
+  width: 100vw;
+  height: 10vh;
+}
+.navegador{
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+}
+
+.actividad{
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+
+}
+.actividad label{
+  font-size: 22px;
+  font-weight: bold;
+}
